@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:component-scan base-package="com.atsistemas.colecciones"/>
+	
+	<bean id="victor" class="java.lang.String">
+		<constructor-arg name="value" value="Victor"/>
+	</bean>
+	
+	<bean id="Juan" class="com.atsistemas.colecciones.Persona">
+		<property name="nombre" value="Juan"/>
+		<property name="amigos">
+			<list>
+				<ref bean="persona"/>
+			</list>
+		</property>
+	</bean>
+
+	
+	<bean id="lista" class="java.util.LinkedList">
+		<constructor-arg name="c">
+			<list>
+				<ref bean="persona"/>
+				<ref bean="Juan"/>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>

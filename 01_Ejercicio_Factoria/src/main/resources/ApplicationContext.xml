@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="factoria1" class="com.atsistemas.factoria.core.entidades.Factoria">
+		<constructor-arg name="director" ref="director"/>
+	</bean>
+	
+	<bean id="factoria2" class="com.atsistemas.factoria.core.entidades.Factoria">
+		<constructor-arg name="director" ref="director"/>
+	</bean>
+
+	<bean id="director" class="com.atsistemas.factoria.core.entidades.Empleado"/>
+	
+	<bean id="ferrari1" class="com.atsistemas.factoria.core.entidades.Ferrari" 
+								factory-bean="factoria1" factory-method="crearCoche">
+		<constructor-arg name="tipo" value="Ferrari"/>
+	</bean>
+	
+	<bean id="ferrari2" class="com.atsistemas.factoria.core.entidades.Ferrari" 
+								factory-bean="factoria2" factory-method="crearCoche">
+		<constructor-arg name="tipo" value="Ferrari"/>
+	</bean>
+	
+	<bean id="fiat1" class="com.atsistemas.factoria.core.entidades.Fiat" 
+								factory-bean="factoria1" factory-method="crearCoche">
+		<constructor-arg name="tipo" value="Fiat"/>
+	</bean>
+	
+	<bean id="fiat2" class="com.atsistemas.factoria.core.entidades.Fiat" 
+								factory-bean="factoria2" factory-method="crearCoche">
+		<constructor-arg name="tipo" value="Fiat"/>
+	</bean>
+	
+	<bean id="renault1" class="com.atsistemas.factoria.core.entidades.Renault" 
+								factory-bean="factoria1" factory-method="crearCoche">
+		<constructor-arg name="tipo" value="Renault"/>
+	</bean>
+	
+	<bean id="renault2" class="com.atsistemas.factoria.core.entidades.Renault" 
+								factory-bean="factoria2" factory-method="crearCoche">
+		<constructor-arg name="tipo" value="Renault"/>
+	</bean>
+
+</beans>
