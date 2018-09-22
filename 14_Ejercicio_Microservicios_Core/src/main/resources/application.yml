@@ -1,0 +1,26 @@
+server:
+  port: 808
+
+spring:
+  application:
+    name: core
+  jpa:
+   hibernate:
+    ddl-auto: create
+    properties:
+     hibernate:
+      dialect: org.hibernate.dialect.DerbyTenSevenDialect
+  datasource:
+  url: jdbc:derby://localhost:1527/Microservicios;create=true
+  username: root
+  password: root
+  driver-class-name: org.apache.derby.jdbc.ClientDriver40
+     
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+      
+holamundo:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule

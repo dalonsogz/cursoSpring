@@ -1,0 +1,6 @@
+com\atsistemas\ejercicio3\core\servicios\Servicio.class
+com\atsistemas\ejercicio3\core\entidades\Persona.class
+com\atsistemas\ejercicio3\core\servicios\ServicioPersonas.class
+com\atsistemas\ejercicio3\core\dto\PersonaDto.class
+com\atsistemas\ejercicio3\core\negocio\ConversionesDtoEntidad.class
+com\atsistemas\ejercicio3\core\persistencia\data\jpa\PersonasDataJpaDao.class

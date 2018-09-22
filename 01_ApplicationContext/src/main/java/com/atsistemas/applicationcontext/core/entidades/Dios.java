@@ -16,12 +16,16 @@ public class Dios {
 	
 	public String crearHombres() {
 		if("Adan".equals(tipo)) {
-			return "Adan";
+			tipo = "Adan";
 		} else if ("Eva".equals(tipo)) {
-			return "Eva";
+			tipo = "Eva";
 		} else {
-			return null;
+			tipo = null;
 		}
+		return tipo;
 	}
 	
+	public String getTipo() {
+		return tipo;
+	}
 }

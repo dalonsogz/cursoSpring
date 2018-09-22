@@ -16,7 +16,7 @@ import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
-@Configuration
+//@Configuration
 @ComponentScan({"com.atsistemas.persistencia.core.servicios","com.atsistemas.persistencia.core.persistencia.hibernate"})
 @PropertySource(value = { "classpath:database.properties" })
 public class ConfiguracionHibernate {

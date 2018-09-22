@@ -15,7 +15,7 @@ public class LecturaDeMensajes {
 	public void mostrarMensajes() {
 		System.out.println(messageSource.getMessage("views.home.title", new Object[] { "Victor" }, Locale.ENGLISH));
 
-		System.out.println(messageSource.getMessage("views.home.title", new Object[] { "Victor" }, new Locale("es", "ES")));
+		System.out.println(messageSource.getMessage("views.home.title", new Object[] { "Victor" }, new Locale("en_US", "en_US")));
 
 	}
 

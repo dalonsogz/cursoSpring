@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+<!-- 		profile="aspectos"> -->
+
+	<bean id="aspectoAntes" class="com.atsistemas.AspectoAntes"/>
+	
+	<bean id="aspectoDespues" class="com.atsistemas.AspectoDespues"/>
+	
+	<bean id="aspectoAlrededor" class="com.atsistemas.AspectoAlrededor"/>
+
+	<aop:config>
+		<aop:pointcut id="EjecucionNegocio" expression="execution(* com.atsistemas.Negocio.metodo(java.lang.String)) &amp;&amp; args(p)" />
+		<aop:aspect ref="aspectoAntes">
+			<aop:before method="antesDeServicio" pointcut-ref="EjecucionNegocio" arg-names="p"/>
+		</aop:aspect>
+		<aop:aspect ref="aspectoAlrededor">
+			<aop:around method="durante" pointcut-ref="EjecucionNegocio" arg-names="p"/>
+		</aop:aspect>
+	</aop:config>
+
+</beans>
