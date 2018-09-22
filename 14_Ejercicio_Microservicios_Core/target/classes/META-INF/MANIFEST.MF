@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: 14_Ejercicio_Microservicios_Core
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dalonso
+Implementation-Vendor-Id: com.atsistemas
+Build-Jdk: 1.8.0_162
+Implementation-URL: http://projects.spring.io/spring-boot/14_Ejercicio
+ _Microservicios_Core/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
