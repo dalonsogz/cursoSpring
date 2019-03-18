@@ -24,11 +24,10 @@ public class Controlador {
 		System.out.println("Procesando Peticion");
 		servicio.ejecutarRequisito();
 	}
-
 	
-
-	
-
+//	public String toString() {
+//		return("Servicio:" + servicio + ",Nombre:" + nombre);
+//	}
 	
 	
 }
