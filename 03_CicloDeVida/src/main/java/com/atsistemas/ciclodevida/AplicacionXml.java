@@ -1,9 +1,13 @@
 package com.atsistemas.ciclodevida;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AplicacionXml {
 
+//	@Autowired
+//	private Persona persona;
+	
 	public static void main(String[] args) {
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
