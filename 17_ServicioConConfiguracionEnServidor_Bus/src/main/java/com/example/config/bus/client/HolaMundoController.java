@@ -2,8 +2,8 @@ package com.example.config.bus.client;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,7 +15,7 @@ public class HolaMundoController {
 	@Value("${message:Este valor es el por defecto}")
 	private String mensaje;
 	
-	@RequestMapping(path="/Saludar", method=RequestMethod.GET)
+	@GetMapping(path="/Saludar")
 	public String metodo(){
 		return mensaje;
 	}
