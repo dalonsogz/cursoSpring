@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ejemplo.arquitectura.cloud</groupId>
-	<artifactId>03_ServidorRegistroYDescubrimiento</artifactId>
+	<artifactId>18_ServidorRegistroYDescubrimiento</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>03_ServidorRegistroYDescubrimiento</name>
+	<name>18_ServidorRegistroYDescubrimiento</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

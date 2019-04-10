@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ejemplo.arquitectura.cloud</groupId>
-	<artifactId>05_ClienteMicroservicioFeign</artifactId>
+	<artifactId>18_ClienteMicroservicioSimplificadoConFeign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>05_ClienteMicroservicioSimplificadoConFeign</name>
+	<name>18_ClienteMicroservicioSimplificadoConFeign</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
